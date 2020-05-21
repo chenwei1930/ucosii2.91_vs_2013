@@ -1,0 +1,29 @@
+1、下载uCOSII源码
+http://download.csdn.net/detail/zx3517288/9665021 （V2.91)
+
+
+
+
+App存放的是用户代码，uCOSII中存的是uCOSII源文件，Ports存放的是与移植平台相关的代码，其中
+
+include     是自己编写的 
+os_cpu.h    定义了和处理器及编译器相关的定义及一些全局函数声明。
+os_cpu_c.c  任务堆栈和时钟节拍中断服务相关代码。这两个文件移植的时候都是需要修改的，因为移植到不同的机器上这三个文件有所不同所以，可以到官网下载已经移植好的程序或者从UCOS II官网提供的移植范例里面找，UCOSII源码中没有包含这些文件。
+为
+————————————————
+版权声明：本文为CSDN博主「走过_冬天」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/zx3517288/article/details/52942219
+
+
+winmm.lib是Windows多媒体相关应用程序接口
+
+   timeBeginPeriod 设置应用程序或驱动程序使用的最小定时器分辨率
+　　timeEndPeriod 清除应用程序或驱动程序使用的最小定时器分辨率
+　　timeGetDevCaps 查询定时器设备以确定其性能
+　　timeGetSystemTime 检取从WINDOWS开始已逝去的毫秒数
+　　timeGetTime 检取从WINDOWS开始已逝去的毫秒数，此函数比上一条函数开销小
+　　timeKillEvent 毁掉指定的定时器回调事件
+　　timeSetEvent 设置一个定时器回调事件
+————————————————
+版权声明：本文为CSDN博主「走过_冬天」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/zx3517288/article/details/52942219
